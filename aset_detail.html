@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pertiwigroup | Online Inventory System</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <!-- bootstrap 3.0.2 -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <!-- Time Picker -->
+        <link href="css/timepicker/bootstrap-timepicker.min.css" type="text/css" />
+        <!-- Date Time Picker -->
+        <link href="css/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+        <link href="css/select2/select2.css" rel="stylesheet"/>
+        <link href="css/customstyle.css" rel="stylesheet" type="text/css" />
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="skin-black">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+                Inventory System
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        
+                             
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-warning"></i>
+                                <span class="label label-warning">10</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 10 notifications</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-people info"></i> 5 new members joined today
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-warning danger"></i> Very long description here that may not fit into the page and may cause design problems
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users warning"></i> 5 new members joined
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-cart success"></i> 25 sales made
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-person danger"></i> You changed your username
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                        </li>
+                        <!-- Tasks: style can be found in dropdown.less -->
+                        
+                            
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span>Sabekti Anggara <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <p>
+                                        Sabekti Anggara - Web Developer
+                                        <small>Member Sejak Nov. 2012</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Followers</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Sales</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Friends</a>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">                
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                        </div>
+                        <div class="pull-left info">
+                            <p>Hello, Sabekti</p>
+
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+                    <!-- search form -->
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                            <span class="input-group-btn">
+                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="../../index.html">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../tables/inventorytable.html">
+                                <i class="fa fa-th"></i> <span>Index Asset</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../tables/inventory_tambahaset.html">
+                                <i class="fa fa-th"></i> <span>Tambah Asset</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../tables/inven_massmutasi.html">
+                                <i class="fa fa-th"></i> <span>Mutasi Massal</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">                
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Asset Detail
+                        <small>Detail Asset</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Detail Aset</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-solid">
+                        <div class="box-header">
+                            <i class="fa fa-text-width"></i>
+                            <h3 class="box-title">Detail Aset : CPU-2014-09-0010</h3>
+                        </div> <!-- Box Header -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form role="form">
+                                <div class="form-group">
+                                    <label>Kode Aset</label>
+                                    <input type="text" class="form-control" placeholder="CPU-2014-09-0010" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nama Aset</label>
+                                    <input type="text" class="form-control" placeholder="CPU DUAL CORE BLA BLA BLA" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Kategori</label>
+                                    <input type="text" class="form-control" placeholder="CPU" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tanggal Beli</label>
+                                    <input type="text" class="form-control" placeholder="2 September 2014" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Serial Number</label>
+                                    <input type="text" class="form-control" placeholder="2992319875" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Garansi Sampai</label>
+                                    <input type="text" class="form-control" placeholder="2 September 2015" disabled>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Vendor</label>
+                                    <input type="text" class="form-control" placeholder="Harco Mangga 2" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Status</label>
+                                    <input type="text" class="form-control" placeholder="Aktif" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Lokasi</label>
+                                    <input type="text" class="form-control" placeholder="Rawamangun" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Pengguna</label>
+                                    <input type="text" class="form-control" placeholder="Front Office" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Gambar</label>
+                                    <img src="http://dummyimage.com/250x250/000/fff.jpg">
+                                </div>
+                                </form> <!-- Form  -->
+                            </div>
+                        </div> <!-- Row -->
+                    </div> <!-- box -->
+
+                    <div class="topbot-action">
+                        <button type="submit" class="btn btn-warning"><i class="fa fa-fw fa-truck"></i>Mutasi</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-fw fa-pencil"></i>Edit</button>
+                    </div>
+                 
+                 <!-- Histori Item -->
+                 <div class="box">
+                                <div class="box-header">
+                                    <h3 class="box-title">Histori Aset</h3>
+                                    <div class="box-tools">
+                                        <ul class="pagination pagination-sm no-margin pull-right">
+                                            <li><a href="#">«</a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">»</a></li>
+                                        </ul>
+                                </div><!-- /.box-header -->
+                                <div class="box-body table-responsive no-padding">
+                                    <table class="table table-hover">
+                                        <tbody><tr>
+                                            <th>Transaksi</th>
+                                            <th>Tanggal</th>
+                                            <th>Dari</th>
+                                            <th>Ke</th>
+                                            <th>User</th>
+                                            <th>Catatan</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Mutasi</td>
+                                            <td>5-7-2014</td>
+                                            <td>Dept IT</td>
+                                            <td>Rawamangun</td>
+                                            <td>Ronaldo</td>
+                                            <td>Pasang Wireless Card.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mutasi</td>
+                                            <td>4-7-2014</td>
+                                            <td>Rawamangun</td>
+                                            <td>Dept IT</td>
+                                            <td>Ronaldo</td>
+                                            <td>Wifi ga bisa.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mutasi</td>
+                                            <td>3-9-2014</td>
+                                            <td>Dept IT</td>
+                                            <td>Rawamangun</td>
+                                            <td>Ronaldo</td>
+                                            <td>Pengadaan Barang.</td>
+                                        </tr>
+                                                                             
+                                    </tbody></table>
+                                </div><!-- /.box-body -->
+                            </div>
+
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+
+
+        <!-- jQuery 2.0.2 -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/plugins/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+        <script src="js/plugins/select2/select2.js" type="text/javascript"></script>
+        <!-- AdminLTE App -->
+        <script src="js/AdminLTE/app.js" type="text/javascript"></script>
+
+        <script src="js/AdminLTE/function.js" type="text/javascript"></script>
+
+    </body>
+</html>
